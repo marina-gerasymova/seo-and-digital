@@ -1,0 +1,89 @@
+@import "vars";
+
+.article-with-right-picture {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@media screen and (max-width: 700px) {
+		flex-direction: column-reverse;
+	}
+
+	&__content {
+		width: 45%;
+
+		@media screen and (max-width: 700px) {
+			width: 90%;
+		}
+	}
+
+	&__title {
+		@include font-size-30px;
+	}
+
+	&__sign {
+		margin: 20px 0 35px;
+	
+		@include font-size-16px;
+		color: $color-grey-666;
+	}
+	
+	&__button {
+		padding: 15px 31px;
+
+		border: none;
+		cursor: pointer;
+	}
+
+	&__image-wrap {
+		max-width: 50%;
+
+		@media screen and (max-width: 700px) {
+			max-width: unset;
+		}
+	}
+
+	&__image {
+		max-width: 550px;
+
+		@media screen and (max-width: 1100px) {
+			max-width: 400px;
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+		}
+
+		@media screen and (max-width: 400px) {
+			max-width: 300px;
+		}
+	}
+
+	&__form {
+		display: flex;
+	}
+
+	&__form > button {
+		margin-left: 30px;
+	}
+
+	&__input-url,
+	&__input-email {
+		padding: 10px;
+		border-color: $color-grey-ccc;
+	}
+
+	&__input-url:focus,
+	&__input-email:focus {
+		outline: none;
+		border-color: $color-grey-aaa;
+	}
+
+	&__input-url {
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+	&__input-email {
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+}

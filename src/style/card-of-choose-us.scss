@@ -1,0 +1,49 @@
+@import "vars";
+
+.card-of-choose-us {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	max-width: 300px;
+	padding: 0 30px 50px;
+
+	background: $color-white;
+
+	transition: box-shadow ease 0.3s;
+
+	@media screen and (max-width: 960px) {
+		max-width: 250px;
+		padding: 0 15px 25px;
+
+		&__image {
+			max-width: 250px;
+		}
+	}
+
+	&:hover {
+		box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+	}
+
+	&__title {
+		margin-top: 20px;
+
+		@include font-size-20px;
+		font-weight: bold;
+	}
+
+	&__sign {
+		margin: 23px 0 40px;
+
+		@include font-size-15px;
+		color: $color-grey-aaa;
+	}
+
+	&__button  {
+		padding: 15px 30px;
+	}
+
+	&__image {
+		width: 300px;
+	}
+}

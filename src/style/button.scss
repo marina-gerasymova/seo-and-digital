@@ -1,0 +1,16 @@
+@import "vars";
+
+.button {
+	font-size: $font-size-14px;
+	color: $color-white;
+	background: $color-orange;
+	box-shadow: 4px 4px 8px $color-orange-shadow;
+	border-radius: 30px;
+
+	transition: all ease 0.3s;
+
+  &:hover {
+		color: $color-orange;
+		background: $color-orange-shadow;
+	}
+}

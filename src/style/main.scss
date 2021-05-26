@@ -1,0 +1,38 @@
+@import "vars";
+@import "header";
+@import "logo";
+@import "nav";
+@import "burger";
+@import "button";
+@import "footer";
+@import "socials";
+@import "main-front-page";
+@import "above-the-fold";
+@import "logos";
+@import "article-with-right-picture";
+@import "card-of-oppotunity";
+@import "why-us";
+@import "card-of-choose-us";
+
+p,
+ul,
+li,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+

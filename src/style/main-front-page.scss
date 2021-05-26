@@ -1,0 +1,51 @@
+@import "vars";
+
+.main {
+	&__above-the-fold,
+	&__logos,
+	&__acticle-with-right-picture,
+	&__cards-of-oppotunity,
+	&__why-us {
+		max-width: 1030px;
+
+		margin: 50px auto;
+		padding: 0 20px;
+	}
+
+	&__cards-of-oppotunity {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width: 800px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__why-us {
+		padding: 50px 20px;
+	}
+
+	&__logos {
+		@media screen and (max-width: 680px) {
+			display: none !important;
+		}
+	}
+
+	&__logos-mobile {
+		display: none !important;
+
+		@media screen and (max-width: 680px) {
+			display: flex !important;
+		}
+	}
+
+	&--background-grey {
+		background: $color-light-grey;
+	}
+
+	&__acricle-wrap {
+		overflow-x: hidden;
+	}
+}
