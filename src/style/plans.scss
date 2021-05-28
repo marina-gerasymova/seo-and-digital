@@ -1,0 +1,26 @@
+@import "vars";
+
+.plans {
+	padding: 50px 20px;
+	text-align: center;
+
+	&__title {
+		font-size: 30px;
+	}
+	
+	&__sub-title {
+		font-size: 16px;
+		margin-bottom: 56px;
+	}
+	
+	&__cards {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 830px) {
+		display: none;
+	}
+}
+

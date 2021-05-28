@@ -25,6 +25,10 @@
 		width: 380px;
 	}
 
+	@media screen and (max-width: 420px) {
+		width: 100%;
+	}
+
 	&__icon-wrap {
 		display: flex;
 		justify-content: center;
@@ -37,10 +41,13 @@
 		border-radius: 15px;
 
 		@media screen and (max-width: 800px) {
+			max-width: 50px;
+
 			margin-right: 20px; 
-			padding: 0 20px;
-			height: unset;
 			margin-bottom: unset;
+
+			padding: 0 15px;
+			height: unset;
 		}
 
 		&--red {
