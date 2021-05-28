@@ -1,0 +1,100 @@
+@import "vars";
+
+.card-with-price {
+	max-width: 320px;
+	padding: 60px;
+
+	background: $color-white;
+	transition: box-shadow ease 0.3s;
+
+    &:hover {
+        box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
+    }
+    
+    &__name {
+      font-size: 20px;
+    }
+    
+    &__price-wrap {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+	
+			margin-top: 25px;
+			@include font-size-16px;
+    }
+    
+    &__price {
+			display: flex;
+			align-items: flex-end;
+    }
+    
+    &__price-number {
+			font-size: 60px;
+			line-height: 84%;
+    }
+    
+    &__sign {
+      margin: 17px auto 30px; 
+    
+			@include font-size-16px;
+			line-height: 250%;
+			text-align: center;
+			color: $color-grey-666;
+    }
+    
+    &__button {
+		display: block;
+		padding: 15px 40px;
+		
+		color: $color-orange;
+		background: $color-orange-shadow;
+    }
+    
+    &--checked {
+        padding: 100px 60px;
+        box-shadow: 15px 25px 70px -5px rgba(0, 0, 0, 0.07);
+    }
+    
+    &--checked > .button{
+        color: $color-white;
+        background: $color-orange;
+    }
+    
+    &--checked > .cart-with-price__name {
+        color: $color-orange;
+    }
+}
+    
+@media screen and (max-width: 1060px) {
+    .card-with-price {
+        max-width: 280px;	
+        padding: 30px;
+
+        &--checked {
+            padding: 60px 30px;
+        }
+    }
+}
+    
+@media screen and (max-width: 920px) {
+    .card-with-price {
+        max-width: 250px;	
+        padding: 15px;
+
+        &__button {
+            padding: 14px 20px;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        
+        &__price-number {
+            font-size: 50px;
+        }
+    
+        &--checked {
+            padding: 40px 15px;
+        }
+    }
+}
+

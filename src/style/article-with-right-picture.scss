@@ -1,0 +1,129 @@
+@import "vars";
+
+.article-with-right-picture {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@media screen and (max-width: 830px) {
+		flex-direction: column-reverse;
+
+		text-align: center;
+	}
+
+	&__content {
+		width: 45%;
+		min-width: 410px;
+
+		@media screen and (max-width: 830px) {
+			width: 90%;
+			min-width: unset;
+		}
+	}
+
+	&__title {
+		@include font-size-30px;
+	}
+
+	&__sign {
+		margin: 20px 0 35px;
+	
+		@include font-size-16px;
+		color: $color-grey-666;
+	}
+	
+	&__button {
+		padding: 15px 31px;
+
+		border: none;
+		cursor: pointer; 
+
+		@media screen and (max-width: 450px) {
+			padding: 15px 68px;
+		}
+	}
+
+	&__image-wrap {
+		max-width: 50%;
+		margin-right: -15px;
+
+		@media screen and (max-width: 830px) {
+			max-width: unset;
+			margin-right: unset;
+		}
+	}
+
+	&__image {
+		max-width: 550px;
+
+		@media screen and (max-width: 1100px) {
+			max-width: 400px;
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+		}
+
+		@media screen and (max-width: 400px) {
+			max-width: 300px;
+		}
+	}
+
+	&__form {
+		display: flex;
+
+		@media screen and (max-width: 960px) {
+			flex-wrap: wrap;
+		}
+
+		@media screen and (max-width: 830px) {
+			justify-content: center;
+		}
+
+		@media screen and (max-width: 450px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__form > button {
+		margin-left: 30px;
+
+		@media screen and (max-width: 960px) {
+			margin: 20px 0 0;
+		}
+
+		@media screen and (max-width: 830px) {
+			margin: 0 0 0 30px;
+		}
+
+		@media screen and (max-width: 593px) {
+			margin: 20px 30px;
+		}
+	}
+
+	&__input-url,
+	&__input-email {
+		padding: 10px;
+		border-color: $color-grey-ccc;
+
+		@media screen and (max-width: 450px) {
+			margin-bottom: 20px;
+			border-radius: 20px;
+		}
+	}
+
+	&__input-url:focus,
+	&__input-email:focus {
+		outline: none;
+		border-color: $color-grey-aaa;
+	}
+
+	&__input-url {
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+	&__input-email {
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+}

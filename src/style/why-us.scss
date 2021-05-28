@@ -1,0 +1,22 @@
+@import "vars";
+
+.why-us {
+	text-align: center;
+
+  &__title {
+    @include font-size-30px;
+  }
+    
+  &__sign {
+		max-width: 680px;
+		margin: 20px auto 55px;
+
+		@include font-size-16px;
+		color: $color-grey-666;
+  }
+    
+	.why-us__cards {
+		display: flex;
+		justify-content: space-between;
+	}
+}

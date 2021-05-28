@@ -1,0 +1,107 @@
+@import "vars.scss";
+
+.footer {
+	max-width: 1030px;
+
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 600px) {
+		max-width: 390px;
+	}
+
+	&-wrapper {
+		padding-top: 50px;
+		background: $color-light-grey;
+
+		@media screen and (max-width: 600px) {
+			padding-top: 0;
+		}
+	}
+
+	&__blocks {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__block {
+		margin-top: 50px;
+		max-width: 250px;
+	}
+
+	&__about-company-sign {
+		margin: 10px 0 10px;
+	
+		@include font-size-14px;
+		color: $color-grey-666;
+	}
+	
+	&__title {
+		margin-bottom: 34px;
+	
+		@include font-size-18px;
+		font-weight: 600;
+		color: $color-grey-333;
+
+		@media screen and (max-width: 600px) {
+			margin-bottom: 20px;
+		} 
+	}
+	
+	&__list {
+		padding-left: 20px;
+	
+		font-size: 14px;
+		color: $color-orange;
+
+		@media screen and (max-width: 600px) {
+			padding-left: 15px;
+		}
+	}
+	
+	&__list-item {
+		font-weight: 500;
+		color: $color-grey-666;
+	
+		transition: color ease 0.3s;
+	}
+	
+	&__list-item:hover {
+		color: $color-orange;
+	}
+	
+	&__list > li {
+		padding-bottom: 5px;
+		@include font-size-14px;
+	}
+	
+	&__sign-bold {
+		color: $color-grey-333;
+		font-weight: bold;
+	}
+	
+	&__sign {
+		margin-bottom: 10px;
+		@include font-size-14px;
+		color: $color-grey-666;
+	}
+	
+	&__copyright {
+		margin: 20px auto 0;
+		padding-bottom: 20px;
+	
+		@include font-size-14px;
+		text-align: center;
+		color: $color-grey-888;
+	}
+	
+	&__separate {
+		margin: 50px auto 20px;
+	
+		height: 1px;
+		width: 100%;
+	
+		background: $color-grey-ccc;
+	}
+}

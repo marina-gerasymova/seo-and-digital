@@ -1,0 +1,41 @@
+<template>
+  <section class="main__logos logos">
+    <img
+      src="../../image/logo__liva.svg"
+      alt="liva"
+      title="liva"
+      class="logos__logo"
+      style="margin-left: -20px"
+    />
+    <img
+      src="../../image/logo__kanba.svg"
+      alt="Kanba"
+      title="Kanba"
+      class="logos__logo"
+    />
+    <img
+      src="../../image/logo__amara.svg"
+      alt="Amara"
+      title="Amara"
+      class="logos__logo"
+    />
+    <img
+      src="../../image/logo__aven.svg"
+      alt="Aven"
+      title="Aven"
+      class="logos__logo"
+    />
+    <img
+      src="../../image/logo__hex-lab.svg"
+      alt="Hexlab"
+      title="Hexlab"
+      class="logos__logo"
+    />
+    <img
+      src="../../image/logo__kanba.svg"
+      alt="Kanba"
+      title="Kanba"
+      class="logos__logo"
+    />
+  </section>
+</template>

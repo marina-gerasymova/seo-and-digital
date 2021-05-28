@@ -1,0 +1,57 @@
+@import "vars";
+
+
+.card-of-seo {
+	display: flex;
+	align-items: center;
+
+	padding: 17px 30px;
+
+	&:hover {
+		box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+	}
+	
+	&__icon-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+		width: 65px;
+		height: 65px;
+	
+		border-radius: 50px;
+	}
+	
+	&__icon-wrap--red {
+		background: $color-icon-red;
+	}
+	
+	&__icon-wrap--green {
+		background: $color-icon-green;
+	}
+	
+	&__icon-wrap--yellow {
+		background: $color-icon-yellow;
+	}
+	
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
+	
+	&__content {
+		margin-left: 20px;
+	}
+	
+	&__title {
+		@include font-size-16px;
+		font-weight: bold;
+	}
+	
+	&__sign {
+		max-width: 362px;
+	
+		@include font-size-14px;
+		color: $color-grey-666;
+	}
+}

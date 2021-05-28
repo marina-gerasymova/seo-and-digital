@@ -1,0 +1,40 @@
+@import "vars";
+
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 120px;
+	margin-top: 17px;
+
+	&__social-icon {
+		width: 15px;
+		height: 15px;
+	
+		fill: $color-grey-aaa;
+	
+		transition: fill ease 0.3s;
+	}
+	
+	&__social-link:hover > .socials__social-icon {
+		fill: $color-white;
+	}
+	
+	&__social-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+		width: 30px;
+		height: 30px;
+	}
+	
+	&__social-link:hover {
+		width: 30px;
+		height: 30px;
+	
+		background: $color-orange;
+		border-radius: 15px;
+	}
+}

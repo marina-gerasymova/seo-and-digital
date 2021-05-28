@@ -1,0 +1,96 @@
+@import "vars";
+
+.card-of-oppotunity {
+	width: 370px;
+	padding: 40px 30px 25px;
+
+	transition: box-shadow ease 0.3s;
+
+	&:hover {
+		box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+	}
+
+	@media screen and (max-width: 800px) {
+		display: flex;
+		width: 550px;
+		
+		padding: 40px 30px 25px 0;
+	}
+
+	@media screen and (max-width: 580px) {
+		width: 480px;
+	}
+
+	@media screen and (max-width: 500px) {
+		width: 380px;
+	}
+
+	@media screen and (max-width: 420px) {
+		width: 100%;
+	}
+
+	&__icon-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	
+		width: 70px;
+		height: 70px;
+	
+		margin-bottom: 25px;
+		border-radius: 15px;
+
+		@media screen and (max-width: 800px) {
+			max-width: 50px;
+
+			margin-right: 20px; 
+			margin-bottom: unset;
+
+			padding: 0 15px;
+			height: unset;
+		}
+
+		&--red {
+			background: $color-opacity-red;;
+		}
+		
+		&--green {
+			background: $color-opacity-green;
+		}
+		
+		&--yellow {
+			background: $color-opacity-yellow;
+		}
+	}
+	
+	&__title {
+		@include font-size-20px;
+		font-weight: 24px;
+	}
+	
+	&__sign {
+		margin: 17px 0 25px;
+	
+		@include font-size-15px;
+		color: $color-grey-666;
+	}
+	
+	&__link {
+		@include font-size-11px;
+		font-weight: bold;
+	
+		transition: color ease 0.3s;
+	}
+	
+	&:hover &__link--hover-red {
+		color: $color-red;
+	}
+	
+	&:hover .card-of-oppotunity__link--hover-green {
+		color: $color-green;
+	}
+	
+	&:hover .card-of-oppotunity__link--hover-yellow {
+		color: $color-yellow;
+	}
+}
