@@ -1,22 +1,16 @@
 <template>
   <div id="app">
-    <Header />
-    <Content />
-    <Footer />
+    <Main />
   </div>
 </template>
 
 <script>
 import "./style/main.scss";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
-import Content from "./components/FrontPage.vue";
+import Main from './views/Main';
 
 export default {
   components: {
-    Header,
-    Footer,
-    Content,
+    Main
   },
 };
 </script>
