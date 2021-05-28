@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <Content />
+    <div class="main__why-us why-us">
+      <h2 class="why-us__title">404. Not found</h2>
+    </div>
     <Footer />
   </div>
 </template>
@@ -9,13 +11,11 @@
 <script>
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Content from "../components/FrontPage/FrontPage";
 
 export default {
   components: {
     Header,
     Footer,
-    Content,
   },
 };
 </script>
