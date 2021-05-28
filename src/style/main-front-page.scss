@@ -1,0 +1,103 @@
+@import "vars";
+
+.main {
+	&__above-the-fold,
+	&__logos,
+	&__acticle-with-right-picture,
+	&__cards-of-oppotunity,
+	&__why-us,
+	&__needs,
+	&__rating,
+	&__plans,
+	&__members {
+		max-width: 1030px;
+
+		margin: 50px auto;
+		padding: 0 20px;
+	}
+
+	&__cards-of-oppotunity {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width: 800px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__why-us {
+		padding: 50px 20px;
+
+		@media screen and (max-width: 1000px) {
+			display: none;
+		}
+
+		&-mobile {
+			display: none;
+
+			@media screen and (max-width: 1000px) {
+				display: block;
+			}
+		}
+	}
+
+	&__logos {
+		@media screen and (max-width: 680px) {
+			display: none !important;
+		}
+	}
+
+	&__logos-mobile {
+		display: none !important;
+
+		@media screen and (max-width: 680px) {
+			display: flex !important;
+		}
+	}
+
+	&--background-grey {
+		background: $color-light-grey;
+	}
+
+	&__acricle-wrap {
+		overflow-x: hidden;
+	}
+
+	&__title {
+		@include font-size-30px;
+	}
+
+	&__sub-title {
+		@include font-size-16px;
+	}
+
+	&__members {
+		text-align: center;
+	}
+
+	&__members-group {
+		display: flex;
+		justify-content: space-between;
+
+		margin-top: 50px;
+
+		&--mobile {
+			display: none;
+		}
+
+		@media screen and (max-width: 800px) {
+			display: none;
+
+			&--mobile {
+				display: block;
+			}
+		}
+		
+	}
+
+	
+
+
+}

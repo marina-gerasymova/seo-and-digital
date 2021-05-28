@@ -1,0 +1,95 @@
+@import "vars";
+
+.rating {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	padding: 20px 0;
+
+	border: 2px solid $color-grey-eee;
+
+	@media screen and (max-width: 1190px) {
+		max-width: 700px;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin-top: -10px;
+	}
+
+	&__number {
+		@include font-size-60px;
+		font-weight: bold;
+	
+		color: $color-grey-666;
+	}
+	
+	&__sign {
+		font-size: 18px;
+		font-weight: 500;
+	
+		color: $color-grey-666;
+
+		@media screen and (max-width: 1190px) {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 740px) {
+			font-size: 12px;
+		}
+
+		@media screen and (max-width: 500px) {
+			font-size: 10px;
+		}
+
+		@media screen and (max-width: 420px) {
+			font-size: 9px;
+			max-width: 36px;
+			text-align: center;
+		}
+	}
+	
+	&__separation {
+		width: 15px;
+		height: 15px;
+		border-radius: 8px;
+
+		@media screen and (max-width: 1190px) {
+			width: 10px;
+			height: 10px;
+		}
+	}
+	
+	&__separation--red {
+		background: $color-red;	
+	}
+	
+	&__separation--green {
+		background: $color-green;	
+	}
+	
+	&__separation--yellow {
+		background: $color-yellow;	
+	}
+}
+
+
+@media screen and (max-width: 740px) {
+	.rating {
+		max-width: 100%;
+		margin: 50px 20px;
+		
+		&__rating {
+			padding: 15px;
+		}
+
+		&__separation {
+			width: 5px;
+			height: 5px;
+		}
+	}
+}

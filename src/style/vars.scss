@@ -1,0 +1,132 @@
+$color-orange: #f25822;
+$color-orange-shadow: rgba(242, 88, 34, 0.25);
+$color-black: #000;
+$color-white: #fff;
+
+$color-light-grey: #f3f3f3;
+$color-grey-eee: #eee;
+$color-grey-ccc: #ccc;
+$color-grey-aaa: #aaa;
+$color-grey-888: #888;
+$color-grey-666: #666;
+$color-grey-333: #333;
+$color-grey-border: rgba(136, 136, 136, 0.25);
+
+$color-opacity-red: rgba(242, 88, 34, 0.25);
+$color-opacity-green: rgba(20, 146, 17, 0.28);
+$color-opacity-yellow: rgba(255, 205, 29, 0.24);
+
+$color-red: rgb(242, 88, 34);
+$color-green: rgb(20, 146, 17);
+$color-yellow: rgb(255, 205, 29);
+
+$color-icon-red: #FCD5C8;
+$color-icon-green: #BDE0BC;
+$color-icon-yellow: #FFF3C9;
+
+$font-size-14px: 14px;
+
+@mixin font-size-11px {
+	font-size: 11px;
+	line-height: 150%;
+}
+
+@mixin font-size-14px {
+    font-size: 14px;
+    line-height: 150%;
+
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+}
+
+@mixin font-size-15px {
+	font-size: 15px;
+	line-height: 150%; 
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+	}
+}
+
+@mixin font-size-16px {
+	font-size: 16px;
+	line-height: 150%;
+
+	@media screen and (max-width: 600px) {
+		font-size: 14px;
+	}
+}
+
+@mixin font-size-18px {
+    font-size: 18px;
+    line-height: 150%;
+
+    @media screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+}
+
+@mixin font-size-20px {
+	font-size: 20px;
+	line-height: 150%; 
+
+	@media screen and (max-width: 800px) {
+		font-size: 18px;
+	}
+
+	@media screen and (max-width: 500px) {
+		font-size: 16px;
+	}
+}
+
+@mixin font-size-30px {
+	font-size: 30px;
+	line-height: 150%;
+
+	@media screen and (max-width: 900px) {
+		font-size: 28px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 24px;
+	}
+}
+
+@mixin font-size-40px {
+	font-size: 40px;
+	line-height: 150%;
+
+	@media screen and (max-width: 900px) {
+		font-size: 35px;
+	}
+
+	@media screen and (max-width: 800px) {
+		font-size: 30px;
+	}
+
+	@media screen and (max-width: 500px) {
+		font-size: 24px;
+	}
+}
+
+@mixin font-size-60px {
+	font-size: 60px;
+	line-height: 150%;
+
+	@media screen and (max-width: 1190px) {
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: 740px) {
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 500px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 420px) {
+		font-size: 18px;
+	}
+}

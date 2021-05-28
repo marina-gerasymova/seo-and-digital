@@ -1,0 +1,41 @@
+@import "vars";
+
+.nav {
+	display: flex;
+	align-items: center;
+
+	&__list {
+		display: flex;
+		align-items: center;
+		
+		list-style-type: none;
+
+		@media screen and (max-width: 830px) {
+			display: none;
+		}
+	}
+
+	&__item {
+		padding: 0 10px;
+	}
+
+	&__link {
+    color: black;
+    font-size: $font-size-14px;
+  
+    transition: color ease 0.3s;
+  }
+
+	&__link:hover {
+    color: $color-orange;
+  }
+  
+  &__button {
+    margin-left: 10px; 
+    padding: 12px 27px;
+
+		@media screen and (max-width: 450px) {
+			display: none;
+		}
+  }
+}
